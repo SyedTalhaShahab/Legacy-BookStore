@@ -1,0 +1,70 @@
+        /* Color Palette */
+        :root {
+            --background-color: #222b61;
+            --container-background: #222b61;
+            --container-border: #dddddd;
+            --section-hover-shadow: rgb(177, 177, 177);
+            --text-primary: #ffffff;
+            --text-secondary: #fb0202;
+            --text-success: #32ff62;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--background-color);
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background: var(--container-background);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(196, 79, 79, 0.1);
+        }
+
+        .section {
+            padding: 15px;
+            margin-bottom: 15px;
+            border: 1px solid var(--container-border);
+            border-radius: 8px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .section:hover {
+            transform: scale(1.03);
+            box-shadow: 0 8px 16px var(--section-hover-shadow);
+        }
+
+        .title {
+            font-size: 1.5rem;
+            color: var(--text-primary);
+            margin-bottom: 10px;
+        }
+
+        .price {
+            font-size: 1.2rem;
+            color: var(--text-secondary);
+            margin-bottom: 5px;
+        }
+
+        .stock {
+            font-size: 1rem;
+            color: var(--text-success);
+        }
+
+        .header {
+            text-align: center;
+            padding: 20px;
+            background-color: var(--container-background);
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .header h1 {
+            font-size: 2rem;
+            color: var(--text-primary);
+        }
